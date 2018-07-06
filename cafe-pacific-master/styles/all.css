@@ -1,0 +1,967 @@
+/*Snacks*/
+#snackscontainer h1 {
+  text-align: center;
+}
+
+#snackscontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#beverages {
+  flex: 1;
+  flex: 0 1 27%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#sweets {
+  flex: 2;
+  flex: 0 1 27%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#ice-cream {
+  flex: 3;
+  flex: 0 1 27%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Copperplate", sans-serif;
+}
+
+/**Navigation Bar**/
+#logo {
+  display: block;
+  margin: 0 auto;
+  width: 9%;
+}
+
+.navtabs {
+  margin: 0 auto;
+  padding: 10px 5px;
+  text-align: center;
+  border: 1px solid #E5C9C3;
+}
+
+.navtabs a:hover {
+  background-color: #ffd1dc;
+  font-weight: bold;
+  padding: 10px 40px;
+}
+
+.navtabs a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #E5C9C3;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffd1dc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ffd1dc;
+}
+
+/*styling for slideshow*/
+#slideshow {
+  text-align: center;
+  padding-top: 10px;
+  height: 20%;
+}
+
+#slideshow h1 {
+  font-size: 50px;
+}
+
+#slideshow h3 {
+  font-size: 30px;
+}
+
+#current-image {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  border: 5px solid black;
+  padding: 8px;
+  background-color: white;
+}
+
+#image-container {
+  background: #E5C9C3;
+  padding: 30px 0;
+  height: 30%;
+}
+
+.buttons-container {
+  background: #E5C9C3;
+}
+
+.slideshow-button {
+  background: none;
+  border: none;
+}
+
+#previous, #next {
+  vertical-align: top;
+  margin-top: 20%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.dot:hover {
+  background-color: #ffd1dc;
+}
+
+/**Styling for home page columns**/
+#blurb {
+  font-family: "Nanum Gothic", sans-serif;
+  display: block;
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#home-columns-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-columns {
+  margin-bottom: 5%;
+  background-color: #ffd1dc;
+}
+
+#hours {
+  flex: 1;
+  flex: 0 0 30%;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#hours h1, #address h1, #moreInfo h1 {
+  text-align: center;
+}
+
+#hours td, #address p, #moreInfo td {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+#hours table, #moreInfo table {
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+#moreInfo td {
+  width: 50%;
+  padding-top: 5%;
+}
+
+.category {
+  font-style: italic;
+}
+
+.time {
+  margin-left: 6px;
+}
+
+#address {
+  flex: 2;
+  flex: 0 0 30%;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#address p {
+  text-align: center;
+}
+
+#moreInfo {
+  flex: 3;
+  flex: 0 0 30%;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+
+/**Bubble Tea Menu**/
+.menu-title, .menu-caption {
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 50px;
+}
+
+.menu-caption {
+  font-size: 20px;
+  font-family:"Nanum Gothic", sans-serif;
+}
+
+.menuColumns h1 {
+  font-size: 40px;
+}
+
+.menuColumns td{
+  font-family:"Nanum Gothic", sans-serif;
+}
+
+.bubbleteamenu table {
+  width: 90%;
+  margin: auto;
+}
+
+.bubbleteamenu td {
+  width: 5%;
+}
+
+.bubbleteamenu table img {
+  margin: 30px auto;
+  display: block;
+}
+
+.boba-names {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  font-family: "Times", sans-serif;
+}
+
+#bobaprice {
+  background-color: inherit;
+  text-align: center;
+  font-size: 80px;
+}
+
+#lavendertea {
+  color: #9370db;
+}
+
+#strawberrytea {
+  color: #ff578b;
+}
+
+#almondtea {
+  color: #ECCD9E;
+}
+
+#mochalatte {
+  color: #654634;
+}
+
+#coconut {
+  color: #7D6655;
+}
+
+#kiwi {
+  color: #9DAE5C;
+}
+
+#mintcafe {
+  color: #35df9b;
+}
+
+#pineapple {
+  color: #ffdc26;
+}
+
+#taro {
+  color: #bd7cc6;
+}
+
+#thai {
+  color: #ff8b4c;
+}
+
+#blueberry {
+  color: #3a63b8;
+}
+
+#raspberry {
+  color: #7f0533;
+}
+
+#greentealatte {
+  color: #6DA452;
+}
+
+#papaya {
+  color: #EE9A17;
+}
+
+#mango {
+  color: #ffd700;
+}
+
+#passionfruit {
+  color: #af2985;
+}
+
+#lychee {
+  color: #de9487;
+}
+
+#honeydew {
+  color: #ABD9AB;
+}
+
+#redbean {
+  color: #C04C57;
+}
+
+#chocolate {
+  color: #7B3F00;
+}
+
+#vanilla {
+  color: #f3e5ab;
+}
+
+#banana {
+  color: #FFE135;
+}
+
+#avocado {
+  color: #5d7404;
+}
+
+#peach {
+  color: #ffbd81;
+}
+
+#green-apple {
+  color: #8db600;
+}
+
+#watermelon {
+  color: #FC6C85;
+}
+
+
+/*Locations & Contact*/
+#page-locations-contacts {
+  text-align: center;
+}
+
+#page-locations-contacts table {
+  margin: 0 auto;
+}
+
+#page-locations-contacts td {
+  text-align: left;
+  width: auto;
+  font-size: 20px;
+}
+
+.contactheaders {
+  font-style: italic;
+  margin-right: 5px;
+}
+
+#page-locations-contacts table {
+  border-collapse: collapse;
+}
+
+#page-locations-contacts td {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contactbigcontainer{
+  display: flex;
+}
+
+#contact {
+  float: left;
+  margin: 0 5%;
+  flex: 1;
+}
+
+#reach-info{
+  flex: 2;
+}
+
+#map {
+  width: 90%;
+  height: 450px;
+}
+
+/*lunch and dinner page styling*/
+#columnsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menuColumns {
+  background-color: #ffd1dc;
+}
+
+#specialEntrees {
+  flex: 1;
+  flex: 0 0 35%;
+  padding: 40px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+.menuColumns img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+#entrees {
+  flex: 2;
+  flex: 0 0 35%;
+  padding: 40px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#sideDishes {
+  flex: 3;
+  flex: 0 0 35%;
+  padding: 40px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#noodleDishes {
+  flex: 4;
+  flex: 0 0 35%;
+  padding: 40px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+#drinks {
+  flex: 5;
+  flex: 0 0 35%;
+  padding: 40px;
+  margin: 20px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+.menuColumns h1 {
+  text-align: center;
+}
+
+.menuColumns table {
+  margin: 0px auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menuColumns td {
+  width: 100%;
+}
+
+.heart {
+  color: red;
+}
+
+.vegetarian {
+  color: green;
+  font-weight: bold;
+  font-family: "Verdana", serif;
+}
+
+
+/*styling for error messages on reviews page*/
+.errorContainer {
+  background-color: #FFBABA;
+  color: red;
+  border: 1px solid red;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 10px;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.hiddenError {
+  display: none;
+}
+
+
+/*reviews page flexbox layout*/
+#flexboxContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#reviewForm {
+  flex: 1;
+  flex: 0 0 35%;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  border: 1px dotted black;
+  border-radius: 10px;
+  background-color: #E5C9C3;
+}
+
+#reviews {
+  flex: 2;
+  flex: 0 0 35%;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  border: 1px dotted black;
+  border-radius: 10px;
+  background-color: #ffd1dc;
+}
+
+
+/*styling for form elements*/
+.labelAndInputContainer {
+  margin: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+.indications {
+  font-style: italic;
+  color: #5f6760;
+}
+
+
+/*styling for popular dishes*/
+.dishesContainer img {
+  width: 100%;
+  padding: 5px;
+  border: 3px solid black;
+  background-color: white;
+}
+
+#popularDishes h1, .dishesContainer p {
+  text-align: center;
+}
+
+.dishesContainer p {
+  font-size: 20px;
+}
+
+#popularDishesContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#popularDishes_1 {
+  flex: 1;
+  flex: 0 0 20%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#popularDishes_2 {
+  flex: 2;
+  flex: 0 0 20%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#popularDishes_3 {
+  flex: 3;
+  flex: 0 0 20%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#popularDishes_4 {
+  flex: 4;
+  flex: 0 0 20%;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/*styling for submitting confirmation*/
+.confirmation {
+  display: none;
+}
+
+.submitted {
+  font-size: 30px;
+  text-align: center;
+  font-family: fantasy;
+  color: #87ceeb;
+  font-weight: bold;
+  display: block;
+}
+
+
+/*styling for existing and submitted reviews*/
+.defaultProfilePicture img {
+  width: 100%;
+}
+
+.defaultProfilePicture {
+  width: 10%;
+  float: left;
+}
+
+.userName p {
+  display: inline-block;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 20px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.date p {
+  display: inline-block;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.rating p {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 20px;
+  float: left;
+}
+
+.rating {
+  width: 200px;
+}
+
+.order p, .existing_comments p, .comments p {
+  font-family:"Nanum Gothic", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+
+.existing_comments p, .comments p {
+  padding-bottom: 30px;
+}
+
+/*The code for star rating is from RunJs. Source: http://runjs.cn/code/xqdzfki8*/
+.rate {
+  display: inline-block;
+  font-size: 30px;
+  transform: rotateY(180deg);
+}
+
+.rate legend {
+  transform: rotateY(180deg);
+  text-align: right;
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked+label>span, input[type="radio"]:checked~label>span, input[type="radio"]+label:hover>span, input[type="radio"]+label:hover~label>span {
+  color: gold;
+}
+
+input[type="radio"]+label:hover~label>span {
+  opacity: 0.5;
+}
+
+.rate label>span::before {
+  content: "☆";
+}
+
+.rate label>span::after {
+  content: "★";
+  display: none
+}
+
+input[type="radio"]:checked+label>span::before, input[type="radio"]:checked~label>span::before, input[type="radio"]+label:hover>span::before, input[type="radio"]+label:hover~label>span::before {
+  display: none;
+}
+
+input[type="radio"]:checked+label>span::after, input[type="radio"]:checked~label>span::after, input[type="radio"]+label:hover>span::after, input[type="radio"]+label:hover~label>span::after {
+  display: inline-block;
+}
+
+/*Resposive*/
+@media only screen and (max-width: 1130px) {
+  #hours td, #moreInfo td {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1036px) {
+  #hours td, #moreInfo td {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #hours td, #moreInfo td {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .boba-names {
+    font-size: 18px;
+    padding: 0;
+  }
+  .bubbleteamenu table {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+  }
+  .bubbleteamenu table img {
+    margin: 30px auto;
+    width: 95%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /**Navigation Bar**/
+  #logo {
+    width: 30%;
+  }
+
+  .navtabs {
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropbtn {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navtabs a, .dropbtn a {
+    padding: 0;
+    display: block;
+  }
+
+  .navtabs a:hover {
+    font-weight: bold;
+    padding: 0;
+  }
+
+  /* Flexboxes */
+  #snackscontainer, #columnsContainer, #home-columns-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Snacks */
+  #beverages, #sweets, #ice-cream {
+    padding: 10px;
+  }
+
+  /*lunch and dinner page*/
+  #specialEntrees, #entrees, #sideDishes, #noodleDishes, #drinks {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu-title {
+  font-size: 20px;
+  }
+
+  /*homepage*/
+  .home-columns {
+    margin-top: 20px;
+  }
+
+  /*Locations & Contact*/
+  #map {
+    width: auto;
+    height: auto;
+  }
+
+  #contact{
+    font-family: "Nanum Gothic", sans-serif;
+  }
+
+  #reach-info td{
+    font-family: "Nanum Gothic", sans-serif;
+  }
+
+  #contactbigcontainer{
+    flex-direction: column;
+  }
+
+  /*Reviews*/
+  #flexboxContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #popularDishesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .dishesContainer p {
+    text-align: center;
+  }
+
+  .dishesContainer {
+    width: 50%;
+  }
+
+  /**Bubble Tea Menu**/
+  .boba-names {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .bubbleteamenu table {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+  }
+
+  .bubbleteamenu table img {
+    margin: 30px auto;
+    width: 100%;
+    display: block;
+  }
+
+  #bobaprice {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  #previous {
+    margin-right: 20%;
+  }
+
+  #next {
+    margin-left: 20%;
+  }
+
+  .slideshow-button {
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .boba-names {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  #bobaprice {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #previous {
+    margin-right: 10%;
+  }
+
+  #next {
+    margin-left: 10%;
+  }
+
+  .slideshow-button {
+    height: 30px;
+    width: 85px;
+    font-size: 12px;
+  }
+
+  .boba-names {
+    font-size: 12px;
+    padding: 0;
+  }
+}
